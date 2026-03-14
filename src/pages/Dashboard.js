@@ -23,13 +23,11 @@ const Dashboard = () => {
         fileName={fileName}
         setFileName={setFileName}
       />
-
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
 
         <div className="md:col-span-2">
           <DiagramViewer image={image} />
         </div>
-
         <ComponentList components={components} />
 
       </div>
@@ -37,5 +35,4 @@ const Dashboard = () => {
     </div>
   );
 };
-
 export default Dashboard;

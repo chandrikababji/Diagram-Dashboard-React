@@ -1,14 +1,10 @@
 import React, { useState } from "react";
 import "./componentlist.css";
-
 const ComponentList = ({ components }) => {
   const [selected, setSelected] = useState(null);
-
   return (
     <div className="component-list">
-
       <h2>Components</h2>
-
       <ul>
         {components.map((comp) => (
           <li
@@ -24,5 +20,4 @@ const ComponentList = ({ components }) => {
     </div>
   );
 };
-
 export default ComponentList;
