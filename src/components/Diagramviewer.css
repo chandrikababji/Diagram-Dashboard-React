@@ -8,7 +8,7 @@
   margin-left: 30px;
   margin-right: 400px;
   gap:400px;
-  height: 90vh;
+  height: 100vh;
 }
 
 .diagram-viewer .controls {
@@ -29,11 +29,11 @@
 
 .diagram-viewer .controls button.zoom-in,
 .diagram-viewer .controls button.zoom-out {
-  background-color: rgb(185, 0, 0);
+  background-color: black;
 }
 
 .diagram-viewer .controls button.reset {
-  background-color: blue;
+  background-color: rgb(123, 123, 176);
 }
 
 .diagram-viewer .controls button:hover {
