@@ -1,0 +1,40 @@
+/* Main container */
+.component-list {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Title */
+.component-list h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Component list items */
+.component-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.component-list li {
+  padding: 8px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+/* Hover effect */
+.component-list li:hover {
+  background-color: #e0e0e0;
+}
+
+/* Selected component */
+.component-list li.selected {
+  background-color: #b3d9ff;
+}

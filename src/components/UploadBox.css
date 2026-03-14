@@ -1,0 +1,19 @@
+.upload-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 30px 35px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  background-color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  position: sticky;
+   top: 0;
+   z-index: 100;
+}
+
+/* file name text settings */
+.upload-box span {
+  font-size: 18px;
+  color: white;
+}

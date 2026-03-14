@@ -1,0 +1,60 @@
+/* Main container */
+.diagram-viewer {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Button container */
+.diagram-viewer .controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+/* Zoom buttons */
+.diagram-viewer .controls button {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.2s;
+}
+
+.diagram-viewer .controls button.zoom-in,
+.diagram-viewer .controls button.zoom-out {
+  background-color: rgb(185, 0, 0);
+}
+
+.diagram-viewer .controls button.reset {
+  background-color: blue;
+}
+
+/* Hover effect for buttons */
+.diagram-viewer .controls button:hover {
+  opacity: 0.8;
+}
+
+/* Image container */
+.diagram-viewer .image-container {
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+}
+
+/* Image transition for smooth zoom */
+.diagram-viewer .image-container img {
+  transition: transform 0.2s ease-in-out;
+  max-width: 100%;
+  height: auto;
+}
+
+/* No image text */
+.diagram-viewer .image-container p {
+  color: #555;
+  font-size: 14px;
+}
