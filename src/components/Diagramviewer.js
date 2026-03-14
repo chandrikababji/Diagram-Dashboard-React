@@ -28,5 +28,4 @@ const DiagramViewer = ({ image }) => {
     </div>
   );
 };
-
 export default DiagramViewer;

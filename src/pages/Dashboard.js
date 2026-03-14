@@ -23,17 +23,18 @@ const Dashboard = () => {
         fileName={fileName}
         setFileName={setFileName}
       />
-               <div className="layout-container">
+      <div className="layout-container">
 
-  <div className="viewer">
-    <DiagramViewer image={image} />
-  </div>
+        <div className="viewer">
+          <DiagramViewer image={image} />
+        </div>
 
-  <div className="components">
-    <ComponentList components={components} />
-  </div>
+        <div className="components">
+          <ComponentList components={components} />
+        </div>
 
-</div>
+      </div>
+      
     </div>
   );
 };
