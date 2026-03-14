@@ -1,4 +1,4 @@
-# Simple Diagram Dashboard
+#  Diagram Dashboard using React
 
 ## Project Description
 This project is a React-based Diagram Dashboard that allows users to upload a circuit diagram and view components. The application includes zoom controls and a responsive layout.
