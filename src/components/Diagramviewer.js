@@ -12,14 +12,18 @@ const DiagramViewer = ({ image }) => {
     <div className="diagram-viewer">
 
       <div className="controls">
-        <button onClick={zoomIn} className="zoom-in">Zoom In</button>
-        <button onClick={zoomOut} className="zoom-out">Zoom Out</button>
-        <button onClick={reset} className="reset">Reset</button>
-      </div>
+  <button onClick={zoomIn} className="zoom-in">Zoom In</button>
+  <button onClick={zoomOut} className="zoom-out">Zoom Out</button>
+  <button onClick={reset} className="reset">Reset</button>
+</div>
 
       <div className="image-container">
         {image ? (
-          <img src={image} alt="diagram" className="w-full h-auto" />
+          <img
+            src={image}
+            alt="diagram"
+            style={{ transform: `scale(${zoom})` }}
+          />
         ) : (
           <p>No diagram uploaded</p>
         )}
@@ -28,4 +32,5 @@ const DiagramViewer = ({ image }) => {
     </div>
   );
 };
+
 export default DiagramViewer;
