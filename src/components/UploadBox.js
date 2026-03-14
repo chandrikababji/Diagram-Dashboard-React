@@ -10,7 +10,7 @@ const UploadBox = ({ setImage, fileName, setFileName }) => {
   };
   return (
     <div className="upload-box">
-      <input type="file" accept="image/*" onChange={handleUpload} />
+      <input type="file" accept="image/png, image/jpeg,image/jpg" onChange={handleUpload} />
       {fileName && <span>Uploaded: {fileName}</span>}
     </div>
   );

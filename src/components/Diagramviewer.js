@@ -19,7 +19,7 @@ const DiagramViewer = ({ image }) => {
 
       <div className="image-container">
         {image ? (
-          <img src={image} alt="diagram" style={{ transform: `scale(${zoom})` }} />
+          <img src={image} alt="diagram" className="w-full h-auto" />
         ) : (
           <p>No diagram uploaded</p>
         )}
